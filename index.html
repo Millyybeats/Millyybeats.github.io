@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Millyy</title>
+  <title>Millyybeats</title>
   <style>
     body {
       background-color: #0c0c0e;
@@ -66,12 +66,34 @@
       display: block;
       border: 1px solid #2a1a3e;
     }
+
+    /* Header layout for name + photo */
+    .header-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header-row img {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 2px solid #9b5de5;
+    }
   </style>
 </head>
 <body>
 
-  <h1>Millyy</h1>
-  <p>Music Producer/Sound Designer/Recording/Mix Engineer</p>
+  <!-- NAME + PHOTO side by side -->
+  <div class="header-row">
+    <div>
+      <h1>Millyy</h1>
+      <p>Music Producer/Sound Designer/Recording/Mix Engineer</p>
+    </div>
+    <!-- Save your photo as photo.png in the same folder as index.html -->
+    <img src="photo.png" alt="Millyy">
+  </div>
 
   <p>
     <a href="#about">About Me</a> |
@@ -84,12 +106,14 @@
 
   <h2 id="about">About Me</h2>
   <p>
-	  Millyy is a music producer from Mount Vernon, New York, known for combining classical music training with modern production. 
-	  His work has earned over 300,000 views on YouTube, helping him gain recognition for his unique sound and versatility.
-	  He studied at the prestigious Juilliard School Pre-College Program for four years, 
-	  where he developed skills in composition, performance, and music theory.
-	  Millyy’s style blends hard-hitting drums with atmospheric sounds, inspired by drill, trap, and experimental electronic music. 
-	  Along with producing for artists, he also creates original drum kits and sample packs for producers online.
+	 Millyy is a music producer from Mount Vernon, New York, known for combining classical music training with modern production.
+	 His work has earned over 300,000 views on YouTube, helping him gain recognition for his unique sound and versatility.
+	 He studied at the prestigious Juilliard School Pre-College Program for four years,
+	 where he developed skills in composition, performance, and music theory.
+	 Millyy's style blends hard-hitting drums with atmospheric sounds, inspired by drill, trap, and experimental electronic music.
+	 Along with producing for artists, he also creates original drum kits and sample packs for producers online.
+	 He is currently in his final year at Berklee College of Music, 
+	 studying Electronic Production and Design.
   </p>
 
   <hr>
@@ -99,8 +123,7 @@
   <div class="video-row">
 
     <div class="video-block">
-      <h3>Track Title</h3>
-      <!-- Replace VIDEO_ID_1 with your YouTube video ID -->
+      <h3>Myself</h3>
       <iframe
         width="245"
         height="138"
@@ -108,12 +131,11 @@
         title="Production project 1"
         allowfullscreen>
       </iframe>
-      <p style="font-size: 0.85em; color: #6b6478; margin-top: 8px; max-width: 245px;">Myself by Bizzy Banks.</p>
+      <p style="font-size: 0.85em; color: #6b6478; margin-top: 8px; max-width: 245px;">"Myself" by Bizzy Banks</p>
     </div>
 
     <div class="video-block">
-      <h3>Track Title</h3>
-      <!-- Replace VIDEO_ID_2 with your YouTube video ID -->
+      <h3>Shot O'Clock</h3>
       <iframe
         width="245"
         height="138"
@@ -121,12 +143,11 @@
         title="Production project 2"
         allowfullscreen>
       </iframe>
-      <p style="font-size: 0.85em; color: #6b6478; margin-top: 8px; max-width: 245px;">Your description here.</p>
+      <p style="font-size: 0.85em; color: #6b6478; margin-top: 8px; max-width: 245px;">"Shot O'Clock" by YMC Tez</p>
     </div>
 
     <div class="video-block">
-      <h3>Track Title</h3>
-      <!-- Replace VIDEO_ID_3 with your YouTube video ID -->
+      <h3>See In Me</h3>
       <iframe
         width="245"
         height="138"
@@ -134,12 +155,11 @@
         title="Production project 3"
         allowfullscreen>
       </iframe>
-      <p style="font-size: 0.85em; color: #6b6478; margin-top: 8px; max-width: 245px;">Your description here.</p>
+      <p style="font-size: 0.85em; color: #6b6478; margin-top: 8px; max-width: 245px;">"See In Me" by Ray OTS ft. TDS Kash & WavesonGianni</p>
     </div>
 
     <div class="video-block">
-      <h3>Track Title</h3>
-      <!-- Replace VIDEO_ID_4 with your YouTube video ID -->
+      <h3>DND</h3>
       <iframe
         width="245"
         height="138"
@@ -147,7 +167,8 @@
         title="Production project 4"
         allowfullscreen>
       </iframe>
-      <p style="font-size: 0.85em; color: #6b6478; margin-top: 8px; max-width: 245px;">Your description here.</p>
+      <p style="font-size: 0.85em; color: #6b6478; margin-top: 8px; max-width: 245px;">"DND" by YMC Tez, Danleveledup, 
+		  Ghoncho1800, YMC Backz, and YMC Ant</p>
     </div>
 
   </div>
@@ -159,30 +180,37 @@
   <div class="video-row">
 
     <div class="video-block">
-      <h3>Project Title</h3>
-      <!-- Put video1.mp4 in the same folder as index.html -->
+      <h3>League of Legends</h3>
       <video width="330" height="185" controls style="border: 1px solid #2a1a3e; display: block;">
         <source src="video1.mp4" type="video/mp4">
       </video>
-      <p style="font-size: 0.85em; color: #6b6478; margin-top: 8px; max-width: 330px;">Your description here.</p>
+      <p style="font-size: 0.85em; color: #6b6478; margin-top: 8px; max-width: 330px;">Sound design project reimagining a League of Legends
+		  trailer that features custom Foley and sound effects. 
+		  The audio was mixed in 5.1 surround sound to create a more immersive cinematic experience, enhancing spatial depth, 
+		  environmental detail, and the intensity of in game action.</p>
     </div>
 
     <div class="video-block">
-      <h3>Project Title</h3>
-      <!-- Put video2.mp4 in the same folder as index.html -->
+      <h3>Motorola Ad</h3>
       <video width="330" height="185" controls style="border: 1px solid #2a1a3e; display: block;">
         <source src="video2.mp4" type="video/mp4">
       </video>
-      <p style="font-size: 0.85em; color: #6b6478; margin-top: 8px; max-width: 330px;">Your description here.</p>
+      <p style="font-size: 0.85em; color: #6b6478; margin-top: 8px; max-width: 330px;">Sound design project featuring a Motorola ad, 
+		  showcasing original scoring to picture alongside custom sound design. 
+		  The work focuses on synchronizing music and sound effects to 
+		  enhance brand storytelling, rhythm, and visual impact. 
+		  Mixed in 5.1 surround sound to create a dynamic and immersive listening experience.</p>
     </div>
 
     <div class="video-block">
-      <h3>Project Title</h3>
-      <!-- Put video3.mp4 in the same folder as index.html -->
+      <h3>The Matrix Foley</h3>
       <video width="330" height="185" controls style="border: 1px solid #2a1a3e; display: block;">
         <source src="video3.mp4" type="video/mp4">
       </video>
-      <p style="font-size: 0.85em; color: #6b6478; margin-top: 8px; max-width: 330px;">Your description here.</p>
+      <p style="font-size: 0.85em; color: #6b6478; margin-top: 8px; max-width: 330px;">Foley project featuring custom recorded and mixed sound 
+		  design over a scene from The Matrix. This piece highlights hands on Foley recording techniques and detailed post-production mixing, to
+		  enhance realism, weight, and impact. 
+		  Mixed in 5.1 surround sound to create a fully immersive and spatially detailed cinematic experience.</p>
     </div>
 
   </div>
@@ -217,7 +245,8 @@
 
   <p>
     <a href="https://www.instagram.com/millyybeats/">Instagram</a> |
-    <a href="https://soundcloud.com/millyybeatss">SoundCloud</a>
+    <a href="https://soundcloud.com/millyybeatss">SoundCloud</a> |
+    <a href="https://youtube.com/@millyybeats">YouTube</a>
   </p>
 
 </body>
